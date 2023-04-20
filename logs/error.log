@@ -1,0 +1,297 @@
+2023/04/20 18:21:35 [emerg] 176291#0: bind() to 0.0.0.0:80 failed (13: Permission denied)
+2023/04/20 18:22:49 [emerg] 177662#0: bind() to 0.0.0.0:80 failed (13: Permission denied)
+2023/04/20 18:22:59 [emerg] 177888#0: bind() to 0.0.0.0:80 failed (13: Permission denied)
+2023/04/20 18:24:00 [emerg] 179156#0: bind() to 0.0.0.0:80 failed (13: Permission denied)
+2023/04/20 18:24:29 [emerg] 179885#0: directive "lua_package_path" is not terminated by ";" in /home/strikez/Documents/sportiq/app/APIGateway/src/conf/nginx.conf:14
+2023/04/20 18:25:49 [emerg] 181373#0: directive "lua_package_path" is not terminated by ";" in /home/strikez/Documents/sportiq/app/APIGateway/src/conf/nginx.conf:14
+2023/04/20 18:26:02 [emerg] 181655#0: unexpected ";" in /home/strikez/Documents/sportiq/app/APIGateway/src/conf/nginx.conf:34
+2023/04/20 18:26:26 [emerg] 182233#0: bind() to 0.0.0.0:80 failed (13: Permission denied)
+2023/04/20 18:27:00 [emerg] 183032#0: bind() to 0.0.0.0:80 failed (13: Permission denied)
+2023/04/20 18:27:13 [emerg] 183311#0: bind() to 0.0.0.0:80 failed (13: Permission denied)
+2023/04/20 18:27:24 [emerg] 183592#0: bind() to 0.0.0.0:80 failed (13: Permission denied)
+2023/04/20 18:27:27 [emerg] 183720#0: bind() to 0.0.0.0:80 failed (13: Permission denied)
+2023/04/20 18:27:47 [emerg] 184123#0: bind() to 0.0.0.0:80 failed (13: Permission denied)
+2023/04/20 18:27:50 [emerg] 184238#0: bind() to 0.0.0.0:80 failed (13: Permission denied)
+2023/04/20 18:30:03 [emerg] 186839#0: bind() to 0.0.0.0:80 failed (13: Permission denied)
+2023/04/20 18:30:36 [emerg] 187477#0: bind() to 0.0.0.0:80 failed (13: Permission denied)
+2023/04/20 18:30:58 [error] 187903#0: *1 failed to load inlined Lua code: content_by_lua(nginx.conf:34):15: unexpected symbol near '#', client: 127.0.0.1, server: , request: "GET / HTTP/1.1", host: "localhost:8080"
+2023/04/20 18:30:58 [error] 187903#0: *2 failed to load inlined Lua code: content_by_lua(nginx.conf:34):15: unexpected symbol near '#', client: 127.0.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost:8080", referrer: "http://localhost:8080/"
+2023/04/20 18:31:53 [error] 187903#0: *3 failed to load inlined Lua code: content_by_lua(nginx.conf:34):15: unexpected symbol near '#', client: 127.0.0.1, server: , request: "GET / HTTP/1.1", host: "localhost:8080"
+2023/04/20 18:31:53 [error] 187903#0: *4 failed to load inlined Lua code: content_by_lua(nginx.conf:34):15: unexpected symbol near '#', client: 127.0.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost:8080", referrer: "http://localhost:8080/"
+2023/04/20 18:32:33 [notice] 190079#0: signal process started
+2023/04/20 18:32:35 [error] 190083#0: *5 attempt to send data on a closed socket: u:00007F0F7DD61840, c:0000000000000000, ft:0 eof:0, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", host: "localhost:8080"
+2023/04/20 18:32:35 [error] 190083#0: *5 attempt to send data on a closed socket: u:00007F0F7DD59C80, c:0000000000000000, ft:0 eof:0, client: 127.0.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost:8080", referrer: "http://localhost:8080/"
+2023/04/20 18:33:42 [notice] 191482#0: signal process started
+2023/04/20 18:33:46 [error] 191485#0: *6 attempt to send data on a closed socket: u:00007F0F7DDBA048, c:0000000000000000, ft:8 eof:0, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", host: "localhost:8080"
+2023/04/20 18:33:46 [error] 191485#0: *6 attempt to send data on a closed socket: u:00007F0F7DDB21B8, c:0000000000000000, ft:8 eof:0, client: 127.0.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost:8080", referrer: "http://localhost:8080/"
+2023/04/20 18:33:47 [error] 191485#0: *6 attempt to send data on a closed socket: u:00007F0F7DDCC690, c:0000000000000000, ft:8 eof:0, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", host: "localhost:8080"
+2023/04/20 18:33:47 [error] 191485#0: *6 attempt to send data on a closed socket: u:00007F0F7DDAE020, c:0000000000000000, ft:8 eof:0, client: 127.0.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost:8080", referrer: "http://localhost:8080/"
+2023/04/20 18:33:47 [error] 191485#0: *6 attempt to send data on a closed socket: u:00007F0F7DDCAD98, c:0000000000000000, ft:8 eof:0, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", host: "localhost:8080"
+2023/04/20 18:33:47 [error] 191485#0: *6 attempt to send data on a closed socket: u:00007F0F7E731708, c:0000000000000000, ft:8 eof:0, client: 127.0.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost:8080", referrer: "http://localhost:8080/"
+2023/04/20 18:33:47 [error] 191485#0: *6 attempt to send data on a closed socket: u:00007F0F7E7373B8, c:0000000000000000, ft:8 eof:0, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", host: "localhost:8080"
+2023/04/20 18:33:47 [error] 191485#0: *6 attempt to send data on a closed socket: u:00007F0F7DDD19D8, c:0000000000000000, ft:8 eof:0, client: 127.0.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost:8080", referrer: "http://localhost:8080/"
+2023/04/20 18:33:47 [error] 191485#0: *6 attempt to send data on a closed socket: u:00007F0F7E737B50, c:0000000000000000, ft:8 eof:0, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", host: "localhost:8080"
+2023/04/20 18:33:48 [error] 191485#0: *6 attempt to send data on a closed socket: u:00007F0F7DDB97E8, c:0000000000000000, ft:8 eof:0, client: 127.0.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost:8080", referrer: "http://localhost:8080/"
+2023/04/20 18:34:14 [notice] 192268#0: signal process started
+2023/04/20 18:35:53 [notice] 194103#0: signal process started
+2023/04/20 18:36:08 [emerg] 194479#0: bind() to 0.0.0.0:80 failed (13: Permission denied)
+2023/04/20 18:36:15 [emerg] 194679#0: unexpected end of file, expecting "}" in /home/strikez/Documents/sportiq/app/APIGateway/src/conf/nginx.conf:38
+2023/04/20 18:36:50 [error] 195397#0: *1 lua entry thread aborted: runtime error: ...trikez/Documents/sportiq/app/APIGateway/src//lua/key.lua:15: attempt to index local 'self' (a nil value)
+stack traceback:
+coroutine 0:
+	...trikez/Documents/sportiq/app/APIGateway/src//lua/key.lua: in function 'redis_connection'
+	...trikez/Documents/sportiq/app/APIGateway/src//lua/key.lua:19: in function 'get_secret'
+	content_by_lua(nginx.conf:34):16: in main chunk, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", host: "localhost:8080"
+2023/04/20 18:36:51 [error] 195397#0: *2 lua entry thread aborted: runtime error: ...trikez/Documents/sportiq/app/APIGateway/src//lua/key.lua:15: attempt to index local 'self' (a nil value)
+stack traceback:
+coroutine 0:
+	...trikez/Documents/sportiq/app/APIGateway/src//lua/key.lua: in function 'redis_connection'
+	...trikez/Documents/sportiq/app/APIGateway/src//lua/key.lua:19: in function 'get_secret'
+	content_by_lua(nginx.conf:34):16: in main chunk, client: 127.0.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost:8080", referrer: "http://localhost:8080/"
+2023/04/20 18:37:44 [notice] 196528#0: signal process started
+2023/04/20 18:37:48 [error] 196532#0: *3 lua entry thread aborted: runtime error: ...trikez/Documents/sportiq/app/APIGateway/src//lua/key.lua:15: attempt to index local 'self' (a nil value)
+stack traceback:
+coroutine 0:
+	...trikez/Documents/sportiq/app/APIGateway/src//lua/key.lua: in function 'redis_connection'
+	...trikez/Documents/sportiq/app/APIGateway/src//lua/key.lua:19: in function 'get_secret'
+	content_by_lua(nginx.conf:34):16: in main chunk, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", host: "localhost:8080"
+2023/04/20 18:37:48 [error] 196532#0: *4 lua entry thread aborted: runtime error: ...trikez/Documents/sportiq/app/APIGateway/src//lua/key.lua:15: attempt to index local 'self' (a nil value)
+stack traceback:
+coroutine 0:
+	...trikez/Documents/sportiq/app/APIGateway/src//lua/key.lua: in function 'redis_connection'
+	...trikez/Documents/sportiq/app/APIGateway/src//lua/key.lua:19: in function 'get_secret'
+	content_by_lua(nginx.conf:34):16: in main chunk, client: 127.0.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost:8080", referrer: "http://localhost:8080/"
+2023/04/20 18:37:49 [error] 196532#0: *5 lua entry thread aborted: runtime error: ...trikez/Documents/sportiq/app/APIGateway/src//lua/key.lua:15: attempt to index local 'self' (a nil value)
+stack traceback:
+coroutine 0:
+	...trikez/Documents/sportiq/app/APIGateway/src//lua/key.lua: in function 'redis_connection'
+	...trikez/Documents/sportiq/app/APIGateway/src//lua/key.lua:19: in function 'get_secret'
+	content_by_lua(nginx.conf:34):16: in main chunk, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", host: "localhost:8080"
+2023/04/20 18:37:49 [error] 196532#0: *6 lua entry thread aborted: runtime error: ...trikez/Documents/sportiq/app/APIGateway/src//lua/key.lua:15: attempt to index local 'self' (a nil value)
+stack traceback:
+coroutine 0:
+	...trikez/Documents/sportiq/app/APIGateway/src//lua/key.lua: in function 'redis_connection'
+	...trikez/Documents/sportiq/app/APIGateway/src//lua/key.lua:19: in function 'get_secret'
+	content_by_lua(nginx.conf:34):16: in main chunk, client: 127.0.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost:8080", referrer: "http://localhost:8080/"
+2023/04/20 18:37:50 [error] 196532#0: *7 lua entry thread aborted: runtime error: ...trikez/Documents/sportiq/app/APIGateway/src//lua/key.lua:15: attempt to index local 'self' (a nil value)
+stack traceback:
+coroutine 0:
+	...trikez/Documents/sportiq/app/APIGateway/src//lua/key.lua: in function 'redis_connection'
+	...trikez/Documents/sportiq/app/APIGateway/src//lua/key.lua:19: in function 'get_secret'
+	content_by_lua(nginx.conf:34):16: in main chunk, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", host: "localhost:8080"
+2023/04/20 18:37:50 [error] 196532#0: *8 lua entry thread aborted: runtime error: ...trikez/Documents/sportiq/app/APIGateway/src//lua/key.lua:15: attempt to index local 'self' (a nil value)
+stack traceback:
+coroutine 0:
+	...trikez/Documents/sportiq/app/APIGateway/src//lua/key.lua: in function 'redis_connection'
+	...trikez/Documents/sportiq/app/APIGateway/src//lua/key.lua:19: in function 'get_secret'
+	content_by_lua(nginx.conf:34):16: in main chunk, client: 127.0.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost:8080", referrer: "http://localhost:8080/"
+2023/04/20 18:42:10 [notice] 201381#0: signal process started
+2023/04/20 18:42:16 [error] 201385#0: *9 lua entry thread aborted: runtime error: ...trikez/Documents/sportiq/app/APIGateway/src//lua/key.lua:15: attempt to index local 'self' (a nil value)
+stack traceback:
+coroutine 0:
+	...trikez/Documents/sportiq/app/APIGateway/src//lua/key.lua: in function 'redis_connection'
+	...trikez/Documents/sportiq/app/APIGateway/src//lua/key.lua:19: in function 'get_secret'
+	content_by_lua(nginx.conf:34):16: in main chunk, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", host: "localhost:8080"
+2023/04/20 18:42:17 [error] 201385#0: *10 lua entry thread aborted: runtime error: ...trikez/Documents/sportiq/app/APIGateway/src//lua/key.lua:15: attempt to index local 'self' (a nil value)
+stack traceback:
+coroutine 0:
+	...trikez/Documents/sportiq/app/APIGateway/src//lua/key.lua: in function 'redis_connection'
+	...trikez/Documents/sportiq/app/APIGateway/src//lua/key.lua:19: in function 'get_secret'
+	content_by_lua(nginx.conf:34):16: in main chunk, client: 127.0.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost:8080", referrer: "http://localhost:8080/"
+2023/04/20 18:53:38 [notice] 213217#0: signal process started
+2023/04/20 18:54:37 [notice] 214655#0: signal process started
+2023/04/20 18:59:38 [error] 220266#0: *1 lua entry thread aborted: runtime error: ...trikez/Documents/sportiq/app/APIGateway/src//lua/key.lua:20: bad argument #1 host: string expected, got nil
+stack traceback:
+coroutine 0:
+	[C]: in function 'error'
+	/opt/openresty/lualib/resty/redis.lua:118: in function 'redis_connection'
+	...trikez/Documents/sportiq/app/APIGateway/src//lua/key.lua:20: in function 'get_secret'
+	content_by_lua(nginx.conf:21):3: in main chunk, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", host: "localhost:8080"
+2023/04/20 18:59:38 [error] 220266#0: *2 lua entry thread aborted: runtime error: ...trikez/Documents/sportiq/app/APIGateway/src//lua/key.lua:20: bad argument #1 host: string expected, got nil
+stack traceback:
+coroutine 0:
+	[C]: in function 'error'
+	/opt/openresty/lualib/resty/redis.lua:118: in function 'redis_connection'
+	...trikez/Documents/sportiq/app/APIGateway/src//lua/key.lua:20: in function 'get_secret'
+	content_by_lua(nginx.conf:21):3: in main chunk, client: 127.0.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost:8080", referrer: "http://localhost:8080/"
+2023/04/20 18:59:39 [error] 220266#0: *3 lua entry thread aborted: runtime error: ...trikez/Documents/sportiq/app/APIGateway/src//lua/key.lua:20: bad argument #1 host: string expected, got nil
+stack traceback:
+coroutine 0:
+	[C]: in function 'error'
+	/opt/openresty/lualib/resty/redis.lua:118: in function 'redis_connection'
+	...trikez/Documents/sportiq/app/APIGateway/src//lua/key.lua:20: in function 'get_secret'
+	content_by_lua(nginx.conf:21):3: in main chunk, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", host: "localhost:8080"
+2023/04/20 18:59:39 [error] 220266#0: *4 lua entry thread aborted: runtime error: ...trikez/Documents/sportiq/app/APIGateway/src//lua/key.lua:20: bad argument #1 host: string expected, got nil
+stack traceback:
+coroutine 0:
+	[C]: in function 'error'
+	/opt/openresty/lualib/resty/redis.lua:118: in function 'redis_connection'
+	...trikez/Documents/sportiq/app/APIGateway/src//lua/key.lua:20: in function 'get_secret'
+	content_by_lua(nginx.conf:21):3: in main chunk, client: 127.0.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost:8080", referrer: "http://localhost:8080/"
+2023/04/20 19:02:19 [notice] 223921#0: signal process started
+2023/04/20 19:03:08 [error] 224909#0: *1 lua entry thread aborted: runtime error: ...trikez/Documents/sportiq/app/APIGateway/src//lua/key.lua:20: bad argument #1 host: string expected, got nil
+stack traceback:
+coroutine 0:
+	[C]: in function 'error'
+	/opt/openresty/lualib/resty/redis.lua:118: in function 'redis_connection'
+	...trikez/Documents/sportiq/app/APIGateway/src//lua/key.lua:20: in function 'get_secret'
+	content_by_lua(nginx.conf:21):3: in main chunk, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", host: "localhost:8080"
+2023/04/20 19:03:08 [error] 224909#0: *2 lua entry thread aborted: runtime error: ...trikez/Documents/sportiq/app/APIGateway/src//lua/key.lua:20: bad argument #1 host: string expected, got nil
+stack traceback:
+coroutine 0:
+	[C]: in function 'error'
+	/opt/openresty/lualib/resty/redis.lua:118: in function 'redis_connection'
+	...trikez/Documents/sportiq/app/APIGateway/src//lua/key.lua:20: in function 'get_secret'
+	content_by_lua(nginx.conf:21):3: in main chunk, client: 127.0.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost:8080", referrer: "http://localhost:8080/"
+2023/04/20 19:03:34 [emerg] 225531#0: bind() to 0.0.0.0:8080 failed (98: Address already in use)
+2023/04/20 19:03:34 [emerg] 225531#0: bind() to 0.0.0.0:8080 failed (98: Address already in use)
+2023/04/20 19:03:34 [emerg] 225531#0: bind() to 0.0.0.0:8080 failed (98: Address already in use)
+2023/04/20 19:03:34 [emerg] 225531#0: bind() to 0.0.0.0:8080 failed (98: Address already in use)
+2023/04/20 19:03:34 [emerg] 225531#0: bind() to 0.0.0.0:8080 failed (98: Address already in use)
+2023/04/20 19:03:34 [emerg] 225531#0: still could not bind()
+2023/04/20 19:03:43 [notice] 225749#0: signal process started
+2023/04/20 19:04:26 [error] 227238#0: *1 lua entry thread aborted: runtime error: ...trikez/Documents/sportiq/app/APIGateway/src//lua/key.lua:20: bad argument #1 host: string expected, got nil
+stack traceback:
+coroutine 0:
+	[C]: in function 'error'
+	/opt/openresty/lualib/resty/redis.lua:118: in function 'redis_connection'
+	...trikez/Documents/sportiq/app/APIGateway/src//lua/key.lua:20: in function 'get_secret'
+	content_by_lua(nginx.conf:21):3: in main chunk, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", host: "localhost:8080"
+2023/04/20 19:04:26 [error] 227238#0: *2 lua entry thread aborted: runtime error: ...trikez/Documents/sportiq/app/APIGateway/src//lua/key.lua:20: bad argument #1 host: string expected, got nil
+stack traceback:
+coroutine 0:
+	[C]: in function 'error'
+	/opt/openresty/lualib/resty/redis.lua:118: in function 'redis_connection'
+	...trikez/Documents/sportiq/app/APIGateway/src//lua/key.lua:20: in function 'get_secret'
+	content_by_lua(nginx.conf:21):3: in main chunk, client: 127.0.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost:8080", referrer: "http://localhost:8080/"
+2023/04/20 19:04:27 [error] 227238#0: *3 lua entry thread aborted: runtime error: ...trikez/Documents/sportiq/app/APIGateway/src//lua/key.lua:20: bad argument #1 host: string expected, got nil
+stack traceback:
+coroutine 0:
+	[C]: in function 'error'
+	/opt/openresty/lualib/resty/redis.lua:118: in function 'redis_connection'
+	...trikez/Documents/sportiq/app/APIGateway/src//lua/key.lua:20: in function 'get_secret'
+	content_by_lua(nginx.conf:21):3: in main chunk, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", host: "localhost:8080"
+2023/04/20 19:04:27 [error] 227238#0: *4 lua entry thread aborted: runtime error: ...trikez/Documents/sportiq/app/APIGateway/src//lua/key.lua:20: bad argument #1 host: string expected, got nil
+stack traceback:
+coroutine 0:
+	[C]: in function 'error'
+	/opt/openresty/lualib/resty/redis.lua:118: in function 'redis_connection'
+	...trikez/Documents/sportiq/app/APIGateway/src//lua/key.lua:20: in function 'get_secret'
+	content_by_lua(nginx.conf:21):3: in main chunk, client: 127.0.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost:8080", referrer: "http://localhost:8080/"
+2023/04/20 19:07:58 [emerg] 233066#0: bind() to 0.0.0.0:8080 failed (98: Address already in use)
+2023/04/20 19:07:58 [emerg] 233066#0: bind() to 0.0.0.0:8080 failed (98: Address already in use)
+2023/04/20 19:07:58 [emerg] 233066#0: bind() to 0.0.0.0:8080 failed (98: Address already in use)
+2023/04/20 19:07:58 [emerg] 233066#0: bind() to 0.0.0.0:8080 failed (98: Address already in use)
+2023/04/20 19:07:58 [emerg] 233066#0: bind() to 0.0.0.0:8080 failed (98: Address already in use)
+2023/04/20 19:07:58 [emerg] 233066#0: still could not bind()
+2023/04/20 19:08:12 [notice] 233420#0: signal process started
+2023/04/20 19:08:17 [error] 233516#0: *1 lua entry thread aborted: runtime error: ...trikez/Documents/sportiq/app/APIGateway/src//lua/key.lua:20: bad argument #1 host: string expected, got nil
+stack traceback:
+coroutine 0:
+	[C]: in function 'error'
+	/opt/openresty/lualib/resty/redis.lua:118: in function 'redis_connection'
+	...trikez/Documents/sportiq/app/APIGateway/src//lua/key.lua:20: in function 'get_secret'
+	content_by_lua(nginx.conf:21):3: in main chunk, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", host: "localhost:8080"
+2023/04/20 19:08:17 [error] 233516#0: *2 lua entry thread aborted: runtime error: ...trikez/Documents/sportiq/app/APIGateway/src//lua/key.lua:20: bad argument #1 host: string expected, got nil
+stack traceback:
+coroutine 0:
+	[C]: in function 'error'
+	/opt/openresty/lualib/resty/redis.lua:118: in function 'redis_connection'
+	...trikez/Documents/sportiq/app/APIGateway/src//lua/key.lua:20: in function 'get_secret'
+	content_by_lua(nginx.conf:21):3: in main chunk, client: 127.0.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost:8080", referrer: "http://localhost:8080/"
+2023/04/20 19:08:17 [error] 233516#0: *3 lua entry thread aborted: runtime error: ...trikez/Documents/sportiq/app/APIGateway/src//lua/key.lua:20: bad argument #1 host: string expected, got nil
+stack traceback:
+coroutine 0:
+	[C]: in function 'error'
+	/opt/openresty/lualib/resty/redis.lua:118: in function 'redis_connection'
+	...trikez/Documents/sportiq/app/APIGateway/src//lua/key.lua:20: in function 'get_secret'
+	content_by_lua(nginx.conf:21):3: in main chunk, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", host: "localhost:8080"
+2023/04/20 19:08:17 [error] 233516#0: *4 lua entry thread aborted: runtime error: ...trikez/Documents/sportiq/app/APIGateway/src//lua/key.lua:20: bad argument #1 host: string expected, got nil
+stack traceback:
+coroutine 0:
+	[C]: in function 'error'
+	/opt/openresty/lualib/resty/redis.lua:118: in function 'redis_connection'
+	...trikez/Documents/sportiq/app/APIGateway/src//lua/key.lua:20: in function 'get_secret'
+	content_by_lua(nginx.conf:21):3: in main chunk, client: 127.0.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost:8080", referrer: "http://localhost:8080/"
+2023/04/20 19:08:18 [error] 233516#0: *5 lua entry thread aborted: runtime error: ...trikez/Documents/sportiq/app/APIGateway/src//lua/key.lua:20: bad argument #1 host: string expected, got nil
+stack traceback:
+coroutine 0:
+	[C]: in function 'error'
+	/opt/openresty/lualib/resty/redis.lua:118: in function 'redis_connection'
+	...trikez/Documents/sportiq/app/APIGateway/src//lua/key.lua:20: in function 'get_secret'
+	content_by_lua(nginx.conf:21):3: in main chunk, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", host: "localhost:8080"
+2023/04/20 19:08:18 [error] 233516#0: *6 lua entry thread aborted: runtime error: ...trikez/Documents/sportiq/app/APIGateway/src//lua/key.lua:20: bad argument #1 host: string expected, got nil
+stack traceback:
+coroutine 0:
+	[C]: in function 'error'
+	/opt/openresty/lualib/resty/redis.lua:118: in function 'redis_connection'
+	...trikez/Documents/sportiq/app/APIGateway/src//lua/key.lua:20: in function 'get_secret'
+	content_by_lua(nginx.conf:21):3: in main chunk, client: 127.0.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost:8080", referrer: "http://localhost:8080/"
+2023/04/20 19:08:18 [error] 233516#0: *7 lua entry thread aborted: runtime error: ...trikez/Documents/sportiq/app/APIGateway/src//lua/key.lua:20: bad argument #1 host: string expected, got nil
+stack traceback:
+coroutine 0:
+	[C]: in function 'error'
+	/opt/openresty/lualib/resty/redis.lua:118: in function 'redis_connection'
+	...trikez/Documents/sportiq/app/APIGateway/src//lua/key.lua:20: in function 'get_secret'
+	content_by_lua(nginx.conf:21):3: in main chunk, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", host: "localhost:8080"
+2023/04/20 19:08:18 [error] 233516#0: *8 lua entry thread aborted: runtime error: ...trikez/Documents/sportiq/app/APIGateway/src//lua/key.lua:20: bad argument #1 host: string expected, got nil
+stack traceback:
+coroutine 0:
+	[C]: in function 'error'
+	/opt/openresty/lualib/resty/redis.lua:118: in function 'redis_connection'
+	...trikez/Documents/sportiq/app/APIGateway/src//lua/key.lua:20: in function 'get_secret'
+	content_by_lua(nginx.conf:21):3: in main chunk, client: 127.0.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost:8080", referrer: "http://localhost:8080/"
+2023/04/20 19:08:18 [error] 233516#0: *9 lua entry thread aborted: runtime error: ...trikez/Documents/sportiq/app/APIGateway/src//lua/key.lua:20: bad argument #1 host: string expected, got nil
+stack traceback:
+coroutine 0:
+	[C]: in function 'error'
+	/opt/openresty/lualib/resty/redis.lua:118: in function 'redis_connection'
+	...trikez/Documents/sportiq/app/APIGateway/src//lua/key.lua:20: in function 'get_secret'
+	content_by_lua(nginx.conf:21):3: in main chunk, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", host: "localhost:8080"
+2023/04/20 19:08:18 [error] 233516#0: *10 lua entry thread aborted: runtime error: ...trikez/Documents/sportiq/app/APIGateway/src//lua/key.lua:20: bad argument #1 host: string expected, got nil
+stack traceback:
+coroutine 0:
+	[C]: in function 'error'
+	/opt/openresty/lualib/resty/redis.lua:118: in function 'redis_connection'
+	...trikez/Documents/sportiq/app/APIGateway/src//lua/key.lua:20: in function 'get_secret'
+	content_by_lua(nginx.conf:21):3: in main chunk, client: 127.0.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost:8080", referrer: "http://localhost:8080/"
+2023/04/20 19:08:18 [error] 233516#0: *11 lua entry thread aborted: runtime error: ...trikez/Documents/sportiq/app/APIGateway/src//lua/key.lua:20: bad argument #1 host: string expected, got nil
+stack traceback:
+coroutine 0:
+	[C]: in function 'error'
+	/opt/openresty/lualib/resty/redis.lua:118: in function 'redis_connection'
+	...trikez/Documents/sportiq/app/APIGateway/src//lua/key.lua:20: in function 'get_secret'
+	content_by_lua(nginx.conf:21):3: in main chunk, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", host: "localhost:8080"
+2023/04/20 19:08:18 [error] 233516#0: *12 lua entry thread aborted: runtime error: ...trikez/Documents/sportiq/app/APIGateway/src//lua/key.lua:20: bad argument #1 host: string expected, got nil
+stack traceback:
+coroutine 0:
+	[C]: in function 'error'
+	/opt/openresty/lualib/resty/redis.lua:118: in function 'redis_connection'
+	...trikez/Documents/sportiq/app/APIGateway/src//lua/key.lua:20: in function 'get_secret'
+	content_by_lua(nginx.conf:21):3: in main chunk, client: 127.0.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost:8080", referrer: "http://localhost:8080/"
+2023/04/20 19:08:18 [error] 233516#0: *13 lua entry thread aborted: runtime error: ...trikez/Documents/sportiq/app/APIGateway/src//lua/key.lua:20: bad argument #1 host: string expected, got nil
+stack traceback:
+coroutine 0:
+	[C]: in function 'error'
+	/opt/openresty/lualib/resty/redis.lua:118: in function 'redis_connection'
+	...trikez/Documents/sportiq/app/APIGateway/src//lua/key.lua:20: in function 'get_secret'
+	content_by_lua(nginx.conf:21):3: in main chunk, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", host: "localhost:8080"
+2023/04/20 19:08:18 [error] 233516#0: *14 lua entry thread aborted: runtime error: ...trikez/Documents/sportiq/app/APIGateway/src//lua/key.lua:20: bad argument #1 host: string expected, got nil
+stack traceback:
+coroutine 0:
+	[C]: in function 'error'
+	/opt/openresty/lualib/resty/redis.lua:118: in function 'redis_connection'
+	...trikez/Documents/sportiq/app/APIGateway/src//lua/key.lua:20: in function 'get_secret'
+	content_by_lua(nginx.conf:21):3: in main chunk, client: 127.0.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost:8080", referrer: "http://localhost:8080/"
+2023/04/20 19:12:00 [emerg] 238700#0: bind() to 0.0.0.0:8080 failed (98: Address already in use)
+2023/04/20 19:12:00 [emerg] 238700#0: bind() to 0.0.0.0:8080 failed (98: Address already in use)
+2023/04/20 19:12:00 [emerg] 238700#0: bind() to 0.0.0.0:8080 failed (98: Address already in use)
+2023/04/20 19:12:05 [notice] 238871#0: signal process started
+2023/04/20 19:13:15 [notice] 240235#0: signal process started
+2023/04/20 19:14:27 [notice] 241639#0: signal process started
+2023/04/20 19:19:35 [notice] 247364#0: signal process started
+2023/04/20 19:22:34 [notice] 250989#0: signal process started
+2023/04/20 19:24:16 [notice] 252920#0: signal process started
+2023/04/20 19:29:32 [notice] 258758#0: signal process started
+2023/04/20 19:29:42 [notice] 259019#0: signal process started
+2023/04/20 19:40:44 [notice] 270649#0: signal process started
