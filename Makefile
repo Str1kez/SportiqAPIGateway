@@ -10,3 +10,9 @@ up:
 
 down:
 	docker compose down
+
+sh:
+	docker exec -it api_gateway sh
+
+reload:
+	docker exec -it api_gateway openresty -s reload

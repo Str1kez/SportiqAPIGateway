@@ -8,6 +8,7 @@ local mt = { __index = _M }
 function _M.new(_)
   local _r = require "resty.redis"
   local redis = _r:new()
+  redis:set_timeouts(1000, 100, 100)
   return setmetatable({ redis = redis }, mt)
 end
 
@@ -18,18 +19,33 @@ function _M.redis_connection(self)
 end
 
 function _M.get_secret(self)
-  self:redis_connection()
+  local ok, _ = self:redis_connection()
+  if not ok then
+    return "", "Нет подключения к KDS"
+  end
   local redis = self.redis
-  return redis:get("secret_key")
+  local ok, err = redis:get("secret_key")
+  if ok == nil or ok == "" or ok == ngx.null then
+    self:set_keepalive()
+    return nil, "Нет ключа на KDS"
+  end
+  self:set_keepalive()
+  return ok, nil
 end
 
 function _M.close(self)
   local redis = self.redis
   if not redis then
-    return "DEBIL", "not initialized"
+    return nil, "not initialized"
   end
 
   return redis:close()
+end
+
+function _M.set_keepalive(self)
+  -- в пул на 10 секунд
+  local redis = self.redis
+  return redis:set_keepalive(10000, 100)
 end
 
 return _M
