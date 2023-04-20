@@ -2,7 +2,7 @@ version: '3'
 
 services:
   api_gateway:
-    image: 'openresty/openresty:1.21.4.1-0-alpine'
+    image: 'api-gateway:latest'
     container_name: "api_gateway"
     env_file: .env
     volumes:

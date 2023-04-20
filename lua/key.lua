@@ -21,7 +21,7 @@ end
 function _M.get_secret(self)
   local ok, _ = self:redis_connection()
   if not ok then
-    return "", "Нет подключения к KDS"
+    return nil, "Нет подключения к KDS"
   end
   local redis = self.redis
   local ok, err = redis:get("secret_key")
@@ -31,6 +31,21 @@ function _M.get_secret(self)
   end
   self:set_keepalive()
   return ok, nil
+end
+
+function _M.check_blacklist(self, uuid, type)
+  local ok, _ = self:redis_connection()
+  if not ok then
+    return nil, "Нет подключения к KDS"
+  end
+  local redis = self.redis
+  local ok, err = redis:get("blacklist:" .. type .. ":" .. uuid)
+  if ok == nil or ok == ngx.null then
+    self:set_keepalive()
+    return false, nil
+  end
+  self:set_keepalive()
+  return true, nil
 end
 
 function _M.close(self)
