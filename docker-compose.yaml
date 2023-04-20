@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+  api_gateway:
+    image: 'openresty/openresty:1.21.4.1-0-alpine'
+    container_name: "api_gateway"
+    env_file: .env
+    volumes:
+      - './conf:/usr/local/openresty/nginx/conf'
+      - './logs:/usr/local/openresty/nginx/logs'
+      - './lua:/usr/local/openresty/nginx/lua'
+    ports:
+      - 8080:8080
+
+networks:
+  default:
+    name: sportiq
+    external: true
