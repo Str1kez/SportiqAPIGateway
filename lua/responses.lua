@@ -11,6 +11,7 @@ function responses.kds_error(error)
   setmetatable(detail, cjson.array_mt)
   local error_response = { detail = detail }
   ngx.say(cjson.encode(error_response))
+  return ngx.exit(ngx.HTTP_INTERNAL_SERVER_ERROR)
 end
 
 function responses.token_not_found()
@@ -23,6 +24,7 @@ function responses.token_not_found()
   local error_response = { detail = detail }
   ngx.header["WWW-Authenticate"] = "Bearer"
   ngx.say(cjson.encode(error_response))
+  return ngx.exit(ngx.HTTP_UNAUTHORIZED)
 end
 
 function responses.token_signature_failed()
@@ -35,6 +37,7 @@ function responses.token_signature_failed()
   local error_response = { detail = detail }
   ngx.header["WWW-Authenticate"] = "Bearer"
   ngx.say(cjson.encode(error_response))
+  return ngx.exit(ngx.HTTP_UNAUTHORIZED)
 end
 
 function responses.token_expired()
@@ -47,6 +50,7 @@ function responses.token_expired()
   local error_response = { detail = detail }
   ngx.header["WWW-Authenticate"] = "Bearer"
   ngx.say(cjson.encode(error_response))
+  return ngx.exit(ngx.HTTP_UNAUTHORIZED)
 end
 
 function responses.token_in_blacklist()
@@ -59,6 +63,7 @@ function responses.token_in_blacklist()
   local error_response = { detail = detail }
   ngx.header["WWW-Authenticate"] = "Bearer"
   ngx.say(cjson.encode(error_response))
+  return ngx.exit(ngx.HTTP_UNAUTHORIZED)
 end
 
 function responses.token_id_upcent()
@@ -71,6 +76,7 @@ function responses.token_id_upcent()
   local error_response = { detail = detail }
   ngx.header["WWW-Authenticate"] = "Bearer"
   ngx.say(cjson.encode(error_response))
+  return ngx.exit(ngx.HTTP_UNAUTHORIZED)
 end
 
 function responses.token_user_upcent()
@@ -83,6 +89,7 @@ function responses.token_user_upcent()
   local error_response = { detail = detail }
   ngx.header["WWW-Authenticate"] = "Bearer"
   ngx.say(cjson.encode(error_response))
+  return ngx.exit(ngx.HTTP_UNAUTHORIZED)
 end
 
 function responses.token_exp_upcent()
@@ -95,11 +102,25 @@ function responses.token_exp_upcent()
   local error_response = { detail = detail }
   ngx.header["WWW-Authenticate"] = "Bearer"
   ngx.say(cjson.encode(error_response))
+  return ngx.exit(ngx.HTTP_UNAUTHORIZED)
+end
+
+function responses.token_type_invalid()
+  local cjson = require "cjson"
+  ngx.status = ngx.HTTP_UNAUTHORIZED
+  local detail = {
+    { msg = "Тип токена неверный или отсутствует", type = "token.type_invalid" }
+  }
+  setmetatable(detail, cjson.array_mt)
+  local error_response = { detail = detail }
+  ngx.header["WWW-Authenticate"] = "Bearer"
+  ngx.say(cjson.encode(error_response))
+  return ngx.exit(ngx.HTTP_UNAUTHORIZED)
 end
 
 function responses.user_deleted()
   local cjson = require "cjson"
-  ngx.status = ngx.HTTP_UNAUTHORIZED
+  ngx.status = ngx.HTTP_GONE
   local detail = {
     { msg = "Пользователь удален", type = "user.deleted" }
   }
@@ -107,6 +128,7 @@ function responses.user_deleted()
   local error_response = { detail = detail }
   ngx.header["WWW-Authenticate"] = "Bearer"
   ngx.say(cjson.encode(error_response))
+  return ngx.exit(ngx.HTTP_GONE)
 end
 
 return responses
