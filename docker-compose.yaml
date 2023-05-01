@@ -3,6 +3,7 @@ version: '3'
 services:
   api_gateway:
     image: 'api-gateway:latest'
+    build: .
     container_name: "api_gateway"
     env_file: .env
     volumes:

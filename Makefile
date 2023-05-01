@@ -14,5 +14,8 @@ down:
 sh:
 	docker exec -it api_gateway sh
 
+build:
+	docker build . -t api-gateway:latest
+
 reload:
 	docker exec -it api_gateway openresty -s reload
