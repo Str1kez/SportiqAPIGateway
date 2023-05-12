@@ -10,8 +10,10 @@ services:
       - './conf:/usr/local/openresty/nginx/conf'
       - './logs:/usr/local/openresty/nginx/logs'
       - './lua:/usr/local/openresty/nginx/lua'
+      - './ssl:/etc/nginx/ssl'
     ports:
       - 8080:8080
+      - 443:443
 
 networks:
   default:
